@@ -44,10 +44,8 @@ def vad_merge(w):
     #if args.vad == 1:
     w1, w2 = vad_merge(w1), vad_merge(w2)
     
-    print("Hello")
+    #print("check")
         
-    # I think random segment length will be better, but let's follow the paper first
-    # fit audio to `hp.data.audio_len` seconds.
     # if merged audio is shorter than `L`, discard it
     L = int(srate * 3.0)
     if w1.shape[0] < L or w2.shape[0] < L:
@@ -77,17 +75,7 @@ def vad_merge(w):
     sf.write(target_wav_path, np.ravel(w1), srate)
     sf.write(mixed_wav_path, np.ravel(mixed), srate)
     
-#     sf.write(target_wav_path, w1, srate)
-#     sf.write(mixed_wav_path, mixed, srate)
-    
-#     #librosa.output.write_wav(target_wav_path, w1, srate)
-#     #librosa.output.write_wav(mixed_wav_path, mixed, srate)
-    
-#     # save selected sample as text file. d-vec will be calculated soon
-#     #dvec_text_path = formatter(dir_, hp.form.dvec, num)
-#     #with open(dvec_text_path, 'w') as f:
-#         #f.write(s1_dvec)
-    print(mixed)
+    #print(mixed)
     return mixed
     
 LIBRI_DIR = LIBRISPEECH_PATH

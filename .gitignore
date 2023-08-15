@@ -1,3 +1,5 @@
 config.py
-filter_musdb_data.py
 __pycache__
+avspeech_train.csv
+avspeech_data.py
+scratch.py
