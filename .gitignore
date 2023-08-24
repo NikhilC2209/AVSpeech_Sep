@@ -3,3 +3,4 @@ __pycache__
 avspeech_train.csv
 avspeech_data.py
 scratch.py
+pretrained_models
