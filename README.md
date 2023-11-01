@@ -22,3 +22,20 @@ Download LibriSpeech Corpus for creating Synthetic mixtures from https://www.ope
 ## Creating Synthetic Audio for Training our Model
 
 Each entry in Librispeech Corpus refers to a speaker, and each speaker folder contains multiple recordings with annotations included. We can use this individual speaker audio from these folders and overlap them using [pydub](https://github.com/jiaaro/pydub) to create synthetic audio mixtures and use them to train our model.
+
+## Synthetic Audio Data Format:
+
+```
++ data
+    |
+    + spk1_spk2
+    |      |
+    |      + sound1.wav
+    |      + sound2.wav
+    |      + mixed.wav
+    + spk1_spk3
+    |      |
+    |      + sound1.wav
+    |      + sound2.wav
+    |      + mixed.wav
+```
