@@ -70,3 +70,38 @@ In each set, you will find :
 - mix_clean a folder containing clean mixtures of 2 speakers.
 - mix_both a folder containing clean mixtures of 2 speakers and a noise.
 - s1, s2, noise three folders containing the raw signals in the mixture.
+
+<br>
+
+# Results
+
+
+### Waveplot of Mixed/Original/Estimated Audio
+
+![2 Speaker Separation Image](img/2_spk_sep.jpg)
+
+<br>
+
+### Mel Spectrogram of Mixed/Original/Estimated Audio
+
+![2 Speaker Separation Mel Spectrograms](img/2_spk_mel_spec.jpg)
+
+<br>
+
+### All Speech Separation Metrics from Asteroid
+
+```
+{'input_pesq': 3.934750556945801,
+ 'input_sar': 28.28840552880433,
+ 'input_sdr': 7.4975376739032145,
+ 'input_si_sdr': 6.865206956863403,
+ 'input_sir': 7.546190904711902,
+ 'input_stoi': 0.9072806256745396,
+ 'pesq': 4.548638343811035,
+ 'sar': 286.0524142270863,
+ 'sdr': 297.9890902500691,
+ 'si_sdr': 90.5447006225586,
+ 'sir': 286.52094481387064,
+ 'stoi': 0.9999999999999994}
+
+```
